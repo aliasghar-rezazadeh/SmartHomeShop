@@ -1,16 +1,231 @@
-# React + Vite
+# 🏠 فروشگاه اینترنتی Smart Home Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 معرفی پروژه
 
-Currently, two official plugins are available:
+Smart Home Shop یک فروشگاه اینترنتی مدرن و واکنش‌گرا (Responsive) است که با استفاده از React، Vite و Tailwind CSS توسعه داده شده است. این پروژه با هدف شبیه‌سازی یک فروشگاه آنلاین لوازم منزل طراحی شده و کاربران می‌توانند محصولات مختلف را مشاهده، مقایسه، به لیست علاقه‌مندی‌ها اضافه کرده و در سبد خرید مدیریت کنند.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+در طراحی این پروژه تلاش شده است تا رابط کاربری زیبا، سرعت بارگذاری بالا و تجربه کاربری مناسب در تمامی دستگاه‌ها از جمله موبایل، تبلت و دسکتاپ فراهم شود.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ امکانات پروژه
 
-## Expanding the ESLint configuration
+* نمایش محصولات در دسته‌بندی‌های مختلف
+* مشاهده جزئیات هر محصول
+* سبد خرید (Shopping Cart)
+* سیستم علاقه‌مندی‌ها (Wishlist)
+* مقایسه محصولات (Compare Products)
+* اسلایدر تبلیغاتی در صفحه اصلی
+* طراحی کاملاً واکنش‌گرا برای تمامی دستگاه‌ها
+* ناوبری روان و کاربرپسند
+* استفاده از کامپوننت‌های قابل استفاده مجدد (Reusable Components)
+* مدیریت وضعیت برنامه با React Context API
+* رابط کاربری مدرن با Tailwind CSS
+* اسکرول خودکار به ابتدای صفحه هنگام تغییر مسیر
+* نمایش خدمات و مزایای فروشگاه
+* سیستم امتیازدهی محصولات
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ تکنولوژی‌های استفاده شده
+
+### Frontend
+
+* React.js
+* Vite
+* JavaScript (ES6+)
+* Tailwind CSS
+* HTML5
+* CSS3
+
+### مدیریت وضعیت
+
+* React Context API
+
+### ابزارهای توسعه
+
+* npm
+* ESLint
+* Git
+* GitHub
+
+---
+
+## 📂 ساختار پروژه
+
+```text
+src
+├── Components
+│   ├── common
+│   └── layout
+├── Pages
+├── assets
+├── data
+├── hook
+├── template
+├── App.jsx
+└── main.jsx
+```
+
+### توضیح پوشه‌ها
+
+#### Components
+
+شامل تمامی کامپوننت‌های پروژه است.
+
+* common : کامپوننت‌های عمومی و قابل استفاده مجدد
+* layout : اجزای ساختاری سایت مانند هدر و فوتر
+
+#### Pages
+
+شامل صفحات اصلی سایت:
+
+* Home
+* Shop
+* ProductDetail
+* ShoppingCart
+* Wishlist
+* Compare
+
+#### assets
+
+شامل تصاویر، فونت‌ها، آیکون‌ها و فایل‌های گرافیکی پروژه.
+
+#### data
+
+داده‌های محصولات فروشگاه.
+
+#### hook
+
+مدیریت وضعیت سبد خرید، علاقه‌مندی‌ها و مقایسه محصولات.
+
+#### template
+
+استایل‌های کمکی و فایل‌های CSS سفارشی.
+
+---
+
+## 🛒 بخش‌های اصلی سایت
+
+### صفحه اصلی (Home)
+
+در این صفحه کاربران می‌توانند:
+
+* مشاهده اسلایدر تبلیغاتی
+* مشاهده دسته‌بندی محصولات
+* مشاهده محصولات ویژه
+* آشنایی با خدمات فروشگاه
+
+### فروشگاه (Shop)
+
+نمایش تمامی محصولات موجود فروشگاه.
+
+### جزئیات محصول (Product Detail)
+
+نمایش اطلاعات کامل محصول شامل:
+
+* تصویر محصول
+* قیمت
+* امتیاز محصول
+* توضیحات
+* افزودن به سبد خرید
+* افزودن به علاقه‌مندی‌ها
+* مقایسه محصول
+
+### سبد خرید (Shopping Cart)
+
+مدیریت محصولات انتخاب شده توسط کاربر.
+
+### علاقه‌مندی‌ها (Wishlist)
+
+ذخیره محصولات مورد علاقه برای خرید در آینده.
+
+### مقایسه محصولات (Compare)
+
+امکان مقایسه مشخصات چند محصول با یکدیگر.
+
+---
+
+## 🚀 نصب و اجرای پروژه
+
+### دریافت پروژه
+
+```bash
+git clone https://github.com/aliasghar-rezazadeh/SmartHomeShop.git
+```
+
+### ورود به پوشه پروژه
+
+```bash
+cd SmartHomeShop
+```
+
+### نصب وابستگی‌ها
+
+```bash
+npm install
+```
+
+### اجرای پروژه در محیط توسعه
+
+```bash
+npm run dev
+```
+
+پس از اجرای دستور بالا، پروژه روی آدرس زیر در دسترس خواهد بود:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## 📦 ساخت نسخه نهایی
+
+برای ساخت نسخه Production:
+
+```bash
+npm run build
+```
+
+فایل‌های خروجی در پوشه `dist` قرار خواهند گرفت.
+
+---
+
+## 🎯 اهداف پروژه
+
+* تمرین توسعه رابط کاربری با React
+* پیاده‌سازی معماری Component-Based
+* یادگیری مدیریت وضعیت با Context API
+* طراحی رابط کاربری واکنش‌گرا
+* پیاده‌سازی امکانات متداول فروشگاه‌های اینترنتی
+* بهبود مهارت کار با Tailwind CSS
+
+---
+
+## 🔮 برنامه‌های توسعه آینده
+
+* اتصال به API و بک‌اند واقعی
+* سیستم ثبت‌نام و ورود کاربران
+* جستجوی پیشرفته محصولات
+* فیلتر و مرتب‌سازی محصولات
+* سیستم پرداخت آنلاین
+* پنل مدیریت فروشگاه
+* ثبت نظرات کاربران
+* سیستم سفارشات
+* اتصال به پایگاه داده
+
+---
+
+## 👨‍💻 توسعه‌دهنده
+
+علی‌اصغر رضازاده
+
+GitHub:
+https://github.com/aliasghar-rezazadeh
+
+---
+
+## 📄 مجوز استفاده
+
+این پروژه با هدف آموزشی، تمرین توسعه وب و استفاده در نمونه‌کار (Portfolio) طراحی و پیاده‌سازی شده است.
